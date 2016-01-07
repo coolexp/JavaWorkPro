@@ -37,7 +37,7 @@ public class SQLBean {
 		 */
 		String url = "jdbc:mysql://localhost:3306/test";
 		// 数据库用户名
-		String user = "pma";
+		String user = "root";
 		// 数据库密码
 		String password = "";
 		// 根据数据库参数取得一个数据库连接
