@@ -8,14 +8,14 @@
 <body>
 <table width="1000" border="1">
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>编号</td>
+    <td>用户名</td>
+    <td>公司名</td>
+    <td>电话</td>
+    <td>QQ</td>
+    <td>Email</td>
+    <td>年龄</td>
+    <td>性别</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
