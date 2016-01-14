@@ -35,7 +35,7 @@ public class SQLBean {
 		 * String url =
 		 * "jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=Northwind";
 		 */
-		String url = "jdbc:mysql://localhost:3306/test";
+		String url = "jdbc:mysql://localhost:3306/pt_db";
 		// 数据库用户名
 		String user = "root";
 		// 数据库密码
