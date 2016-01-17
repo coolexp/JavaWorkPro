@@ -9,6 +9,20 @@ public class UserInfo {
 	private String email;
 	private int age;
 	private int sex;
+	private String sexName="Å® ";
+	private String password;
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getSexName() {
+		return sexName;
+	}
+	public void setSexName(String sexName) {
+		this.sexName = sexName;
+	}
 	public int getId() {
 		return id;
 	}
@@ -55,6 +69,9 @@ public class UserInfo {
 		return sex;
 	}
 	public void setSex(int sex) {
+		if(sex==1){
+			this.setSexName("ÄÐ");
+		}
 		this.sex = sex;
 	}
 }

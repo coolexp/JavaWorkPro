@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="nikoer" namespace="/nikoer" extends="default">
+
+        <action name="ListAllUser" class="com.nikoer.structs2.ListAllUser">
+            <result>/WEB-INF/jsp/ListAllUser.jsp</result>
+        </action>
+        <!-- Add actions here -->
+    </package>
+</struts>

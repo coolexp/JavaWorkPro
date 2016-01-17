@@ -15,11 +15,15 @@
 <body>
 <div style="width:1024px;margin:0 auto;">
 	<h1>添加用户信息</h1>
-	<form action="Insert_done.jsp" method="post">
+	<form action="AddUser_done.jsp" method="post">
 	<table id="inputTable" style="width:1000px;border:1px solid #999999;padding:10px;">
 		<tr>
-			<td class="LabelTxt">姓名:</td>
+			<td class="LabelTxt">用户名:</td>
 			<td><input type="text" name="sname" size="10" style="width:200px;" /> </td>
+		</tr>
+		<tr>
+			<td class="LabelTxt">密码:</td>
+			<td><input type="password" name="spassword" value="111111" size="10" style="width:200px;" /> </td>
 		</tr>
 		<tr>
 			<td class="LabelTxt">性别:</td>

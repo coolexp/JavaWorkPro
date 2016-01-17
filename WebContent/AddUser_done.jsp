@@ -1,28 +1,40 @@
-<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ page import="java.sql.*"%>
-<jsp:useBean id="db" class="com.nikoer.SQLBean" scope="page">
-</jsp:useBean>
+<jsp:useBean id="db" class="com.nikoer.SQLBean" scope="page"></jsp:useBean>
 <%
+  
 	String name=request.getParameter("sname");
+	String password=request.getParameter("spassword");
 	int sex=Integer.parseInt(request.getParameter("ssex"));
 	String company=request.getParameter("scompany");
 	String qq=request.getParameter("sqq");
 	String mobile=request.getParameter("smobile");
 	String email=request.getParameter("semail");
 	int age=Integer.parseInt(request.getParameter("sage"));
- 	String sql_insert="INSERT INTO pt_user VALUES ('" + name + "','" 
-	+ company + "','" + mobile + "','"+qq+"','"+email+"',"+age+","+sex+")";
+	String valueTemplate = "INSERT INTO pt_user (name,password,company,tell,qq,email,age,sex) VALUES ('%s','%s','%s','%s','%s','%s',%d,%d)";
+ 	String sql_insert = String.format(valueTemplate, name,password,company,mobile,qq,email,age,sex);
 	db.insert(sql_insert);
  %>
 
-<html>
+<!Doctype html>
+<html xmlns=http://www.w3.org/1999/xhtml>
 <head>
-<title>Êı¾İ¿âÁ¬½ÓJavaBeanÊ¹ÓÃÊ¾Àı</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>æ•°æ®åº“è¿æ¥JavaBeanä½¿ç”¨ç¤ºä¾‹</title>
+<style type="text/css">
+	.classTable{ width:1000px;border:none;  border-collapse: collapse;}
+	.classTable td{border:1px solid #999999; height:40px;}
+	a.classLink{ text-decoration:underline;color:#000000;} 
+	a.classLink:hover{ text-decoration:underline;color:#FF6600;} 
+	.container{ width:1000px; margin:0 auto;}
+</style>
 </head>
 <body>
-	<div>
-		<div><a href="Insert.jsp">·µ»Ø¼ÌĞø</a></div>
-		<div><a href="Query.jsp">²é¿´µ±Ç°Êı¾İ¿âÊı¾İ</a></div>
+	<div class="container">
+		<h1>æ’å…¥æ•°æ®æˆåŠŸ</h1>
+		<div style="float:left;width:100px;"><a href="AddUser.jsp">è¿”å›ç»§ç»­</a></div>
+		<div style="float:left;width:200px;"><a href="ListUser.jsp">æŸ¥çœ‹å½“å‰æ•°æ®åº“æ•°æ®</a></div>
+		<div style="clear:both;"></div>
 	</div>
 </body>
 </html>

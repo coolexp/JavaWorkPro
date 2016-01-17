@@ -7,8 +7,8 @@
 
     <package name="nikoer" namespace="/nikoer" extends="default">
 
-        <action name="HelloWorld" class="com.nikoer.structs2.HelloWorld">
-            <result>/WEB-INF/jsp/HelloWorld.jsp</result>
+        <action name="ListAllUser" class="com.nikoer.structs2.ListAllUser">
+            <result>/WEB-INF/jsp/ListAllUser.jsp</result>
         </action>
         <!-- Add actions here -->
     </package>
